@@ -35,7 +35,9 @@
     "legendLabels": ["0", "0.5", "1.0"],
     "legendTitle": "Nilai NDVI",
     "tags": ["NDVI","Vegetasi","MODIS","Kekeringan","OKI"]
-  },
+  }
+  ]
+[
   {
     "id": "ndvi_anomaly_oki",
     "name": "NDVI Anomali — OKI 2015–2024",
@@ -52,7 +54,9 @@
     "legendLabels": ["-0.2", "0", "+0.2"],
     "legendTitle": "Anomali NDVI",
     "tags": ["NDVI","Anomali","Kekeringan","OKI"]
-  },
+  }
+]
+[
   {
     "id": "vci_mean_oki",
     "name": "Vegetation Condition Index — OKI",
@@ -69,7 +73,9 @@
     "legendLabels": ["0%", "50%", "100%"],
     "legendTitle": "VCI (%)",
     "tags": ["VCI","Vegetasi","Kekeringan","OKI"]
-  },
+  }
+]
+[
   {
     "id": "rainfall_mean_oki",
     "name": "Curah Hujan Rata-rata — OKI",
@@ -86,7 +92,9 @@
     "legendLabels": ["0mm", "150mm", "300mm"],
     "legendTitle": "Curah Hujan (mm)",
     "tags": ["Curah Hujan","CHIRPS","Kekeringan","OKI"]
-  },
+  }
+]
+[
   {
     "id": "spi_mean_oki",
     "name": "Standardized Precipitation Index — OKI",
@@ -103,7 +111,9 @@
     "legendLabels": ["-2 (Sangat Kering)", "0", "+2 (Sangat Basah)"],
     "legendTitle": "Nilai SPI",
     "tags": ["SPI","Curah Hujan","Kekeringan","OKI"]
-  },
+  }
+]
+[
   {
     "id": "ndvi_class_oki",
     "name": "Klasifikasi Anomali NDVI — OKI",
@@ -124,7 +134,9 @@
     ],
     "legendTitle": "Kelas NDVI Anomali",
     "tags": ["NDVI","Klasifikasi","Kekeringan","OKI"]
-  },
+  }
+]
+[
   {
     "id": "vci_class_oki",
     "name": "Klasifikasi VCI — OKI",
@@ -145,7 +157,9 @@
     ],
     "legendTitle": "Kelas VCI",
     "tags": ["VCI","Klasifikasi","Kekeringan","OKI"]
-  },
+  }
+]
+[
   {
     "id": "spi_class_oki",
     "name": "Klasifikasi SPI — OKI",
@@ -166,7 +180,9 @@
     ],
     "legendTitle": "Kelas SPI",
     "tags": ["SPI","Klasifikasi","Kekeringan","OKI"]
-  },
+  }
+]
+[
   {
     "id": "drought_index_oki",
     "name": "Indeks Kekeringan Komposit — OKI",
@@ -183,7 +199,9 @@
     "legendLabels": ["0 (Tidak)", "1.5 (Sedang)", "3 (Berat)"],
     "legendTitle": "Drought Index",
     "tags": ["Drought Index","Komposit","Kekeringan","OKI"]
-  },
+  }
+]
+[
   {
     "id": "drought_class_oki",
     "name": "Klasifikasi Kekeringan Final — OKI",
