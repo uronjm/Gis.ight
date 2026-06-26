@@ -1,17 +1,19 @@
-{
-  "id": "lst_modis",
-  "name": "Land Surface Temperature — MODIS",
-  "desc": "Rata-rata LST 2015–2025 dari MODIS MOD11A2 resolusi 1km. Konversi ke Celsius.",
-  "sensor": "MODIS MOD11A2",
-  "tahun": "2015–2025",
-  "lokasi": "Area studi kamu",
-  "emoji": "🌡️",
-  "tileUrl": "https://earthengine.googleapis.com/v1/projects/wijaya-474816/maps/0bd75fedcdf896c95c7f27f79069e817-1905df8405a3fbd24dfa8f39794d014e/tiles/{z}/{x}/{y}",
-  "bounds": [[-3.5, 104.0], [-2.0, 105.5]],
-  "stats": { "min": 10, "max": 50, "mean": 32, "std": 8, "bands": 1, "width": 1000, "height": 1000, "nodata": -9999 },
-  "legendType": "gradient",
-  "legendPalette": ["#00FF00", "#FFFF00", "#FFA500", "#FF0000"],
-  "legendLabels": ["10°C", "30°C", "50°C"],
-  "legendTitle": "Suhu Permukaan (°C)",
-  "tags": ["LST", "MODIS", "Suhu", "Thermal"]
-}
+[
+  {
+    "id": "lst_modis",
+    "name": "Land Surface Temperature — MODIS",
+    "desc": "Rata-rata LST 2015–2025 dari MODIS MOD11A2 resolusi 1km. Konversi ke Celsius.",
+    "sensor": "MODIS MOD11A2",
+    "tahun": "2015–2025",
+    "lokasi": "Area studi kamu",
+    "emoji": "🌡️",
+    "tileUrl": "https://earthengine.googleapis.com/v1/projects/wijaya-474816/maps/0bd75fedcdf896c95c7f27f79069e817-1905df8405a3fbd24dfa8f39794d014e/tiles/{z}/{x}/{y}",
+    "bounds": [[-3.5, 104.0], [-2.0, 105.5]],
+    "stats": { "min": 10, "max": 50, "mean": 32, "std": 8, "bands": 1, "width": 1000, "height": 1000, "nodata": -9999 },
+    "legendType": "gradient",
+    "legendPalette": ["#00FF00", "#FFFF00", "#FFA500", "#FF0000"],
+    "legendLabels": ["10°C", "30°C", "50°C"],
+    "legendTitle": "Suhu Permukaan (°C)",
+    "tags": ["LST", "MODIS", "Suhu", "Thermal"]
+  }
+]
