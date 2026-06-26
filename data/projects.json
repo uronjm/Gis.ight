@@ -17,3 +17,210 @@
     "tags": ["LST", "MODIS", "Suhu", "Thermal"]
   }
 ]
+
+[
+  {
+    "id": "ndvi_mean_oki",
+    "name": "NDVI Mean — OKI 2015–2024",
+    "desc": "Rata-rata NDVI dari MODIS MOD13Q1 periode 2015–2024. Menggambarkan kondisi kerapatan vegetasi rata-rata wilayah OKI.",
+    "sensor": "MODIS MOD13Q1",
+    "tahun": "2015–2024",
+    "lokasi": "Ogan Komering Ilir, Sumatera Selatan",
+    "emoji": "🌿",
+    "tileUrl": "https://earthengine.googleapis.com/v1/projects/wijaya-474816/maps/c3a22721605aa616a4c6c6c67563e1a4-be91a47deafcfae68857e9e56c9b1761/tiles/{z}/{x}/{y}",
+    "bounds": [[-4.5, 104.5], [-2.5, 106.5]],
+    "stats": {"min":0,"max":1,"mean":0.5,"std":0.2,"bands":1,"width":1000,"height":1000,"nodata":-9999},
+    "legendType": "gradient",
+    "legendPalette": ["#8B4513","#FFFF00","#006400"],
+    "legendLabels": ["0", "0.5", "1.0"],
+    "legendTitle": "Nilai NDVI",
+    "tags": ["NDVI","Vegetasi","MODIS","Kekeringan","OKI"]
+  }
+  ]
+[
+  {
+    "id": "ndvi_anomaly_oki",
+    "name": "NDVI Anomali — OKI 2015–2024",
+    "desc": "Anomali NDVI terhadap rata-rata jangka panjang. Nilai negatif mengindikasikan penurunan kondisi vegetasi.",
+    "sensor": "MODIS MOD13Q1",
+    "tahun": "2015–2024",
+    "lokasi": "Ogan Komering Ilir, Sumatera Selatan",
+    "emoji": "📉",
+    "tileUrl": "https://earthengine.googleapis.com/v1/projects/wijaya-474816/maps/6aed10e557abc567d6e37e76c4fe3fce-64238fb441e121f3bfbee74319aa9629/tiles/{z}/{x}/{y}",
+    "bounds": [[-4.5, 104.5], [-2.5, 106.5]],
+    "stats": {"min":-0.2,"max":0.2,"mean":0,"std":0.08,"bands":1,"width":1000,"height":1000,"nodata":-9999},
+    "legendType": "gradient",
+    "legendPalette": ["#FF0000","#FFFFFF","#008000"],
+    "legendLabels": ["-0.2", "0", "+0.2"],
+    "legendTitle": "Anomali NDVI",
+    "tags": ["NDVI","Anomali","Kekeringan","OKI"]
+  }
+]
+[
+  {
+    "id": "vci_mean_oki",
+    "name": "Vegetation Condition Index — OKI",
+    "desc": "VCI mengukur kondisi vegetasi relatif terhadap nilai historis minimum dan maksimum. Nilai rendah (<35) indikasi stres vegetasi.",
+    "sensor": "MODIS MOD13Q1",
+    "tahun": "2015–2024",
+    "lokasi": "Ogan Komering Ilir, Sumatera Selatan",
+    "emoji": "🌱",
+    "tileUrl": "https://earthengine.googleapis.com/v1/projects/wijaya-474816/maps/fc4bd9857b6d08cb3010a3ebb791925c-ca918d30a455e9b6a255162a69024a53/tiles/{z}/{x}/{y}",
+    "bounds": [[-4.5, 104.5], [-2.5, 106.5]],
+    "stats": {"min":0,"max":100,"mean":50,"std":20,"bands":1,"width":1000,"height":1000,"nodata":-9999},
+    "legendType": "gradient",
+    "legendPalette": ["#FF0000","#FFFF00","#008000"],
+    "legendLabels": ["0%", "50%", "100%"],
+    "legendTitle": "VCI (%)",
+    "tags": ["VCI","Vegetasi","Kekeringan","OKI"]
+  }
+]
+[
+  {
+    "id": "rainfall_mean_oki",
+    "name": "Curah Hujan Rata-rata — OKI",
+    "desc": "Rata-rata curah hujan bulanan dari CHIRPS 2015–2024. Resolusi 5km.",
+    "sensor": "CHIRPS Daily",
+    "tahun": "2015–2024",
+    "lokasi": "Ogan Komering Ilir, Sumatera Selatan",
+    "emoji": "🌧️",
+    "tileUrl": "https://earthengine.googleapis.com/v1/projects/wijaya-474816/maps/c06875bb8a5a7e24c080bbf32d85db65-230154bb5650e9f0cb2b4b9bfaa72af7/tiles/{z}/{x}/{y}",
+    "bounds": [[-4.5, 104.5], [-2.5, 106.5]],
+    "stats": {"min":0,"max":300,"mean":150,"std":80,"bands":1,"width":500,"height":500,"nodata":-9999},
+    "legendType": "gradient",
+    "legendPalette": ["#FFFFFF","#00BFFF","#00008B"],
+    "legendLabels": ["0mm", "150mm", "300mm"],
+    "legendTitle": "Curah Hujan (mm)",
+    "tags": ["Curah Hujan","CHIRPS","Kekeringan","OKI"]
+  }
+]
+[
+  {
+    "id": "spi_mean_oki",
+    "name": "Standardized Precipitation Index — OKI",
+    "desc": "SPI mengkuantifikasi defisit atau surplus curah hujan. Nilai ≤ -1 indikasi kekeringan meteorologis.",
+    "sensor": "CHIRPS Daily",
+    "tahun": "2015–2024",
+    "lokasi": "Ogan Komering Ilir, Sumatera Selatan",
+    "emoji": "💧",
+    "tileUrl": "https://earthengine.googleapis.com/v1/projects/wijaya-474816/maps/7933856b741244d30a2d381272abfdca-2abb2a41aa1d9fbbcea26dace6794d9d/tiles/{z}/{x}/{y}",
+    "bounds": [[-4.5, 104.5], [-2.5, 106.5]],
+    "stats": {"min":-2,"max":2,"mean":0,"std":0.8,"bands":1,"width":500,"height":500,"nodata":-9999},
+    "legendType": "gradient",
+    "legendPalette": ["#FF0000","#FFFFFF","#0000FF"],
+    "legendLabels": ["-2 (Sangat Kering)", "0", "+2 (Sangat Basah)"],
+    "legendTitle": "Nilai SPI",
+    "tags": ["SPI","Curah Hujan","Kekeringan","OKI"]
+  }
+]
+[
+  {
+    "id": "ndvi_class_oki",
+    "name": "Klasifikasi Anomali NDVI — OKI",
+    "desc": "Klasifikasi kekeringan berbasis anomali NDVI: Normal, Ringan, Sedang, Berat.",
+    "sensor": "MODIS MOD13Q1",
+    "tahun": "2015–2024",
+    "lokasi": "Ogan Komering Ilir, Sumatera Selatan",
+    "emoji": "🗺️",
+    "tileUrl": "https://earthengine.googleapis.com/v1/projects/wijaya-474816/maps/2c4450d41e6dc773286330ceac350ad3-c17af574bbe851fc57dbb02f4fe8cde1/tiles/{z}/{x}/{y}",
+    "bounds": [[-4.5, 104.5], [-2.5, 106.5]],
+    "stats": {"min":0,"max":3,"mean":1.5,"std":1,"bands":1,"width":1000,"height":1000,"nodata":-1},
+    "legendType": "categorical",
+    "legendItems": [
+      {"color": "#008000", "label": "Normal (0)"},
+      {"color": "#FFFF00", "label": "Ringan (1)"},
+      {"color": "#FFA500", "label": "Sedang (2)"},
+      {"color": "#FF0000", "label": "Berat (3)"}
+    ],
+    "legendTitle": "Kelas NDVI Anomali",
+    "tags": ["NDVI","Klasifikasi","Kekeringan","OKI"]
+  }
+]
+[
+  {
+    "id": "vci_class_oki",
+    "name": "Klasifikasi VCI — OKI",
+    "desc": "Klasifikasi kondisi vegetasi berbasis VCI: Normal, Ringan, Sedang, Berat.",
+    "sensor": "MODIS MOD13Q1",
+    "tahun": "2015–2024",
+    "lokasi": "Ogan Komering Ilir, Sumatera Selatan",
+    "emoji": "🌾",
+    "tileUrl": "https://earthengine.googleapis.com/v1/projects/wijaya-474816/maps/3db55c3c26b4d90a2d6c5cc902ef0a0d-75e1a12c9ca46c323982579dc448f76b/tiles/{z}/{x}/{y}",
+    "bounds": [[-4.5, 104.5], [-2.5, 106.5]],
+    "stats": {"min":0,"max":3,"mean":1.5,"std":1,"bands":1,"width":1000,"height":1000,"nodata":-1},
+    "legendType": "categorical",
+    "legendItems": [
+      {"color": "#008000", "label": "Normal (VCI ≥ 65)"},
+      {"color": "#FFFF00", "label": "Ringan (50–65)"},
+      {"color": "#FFA500", "label": "Sedang (35–50)"},
+      {"color": "#FF0000", "label": "Berat (< 35)"}
+    ],
+    "legendTitle": "Kelas VCI",
+    "tags": ["VCI","Klasifikasi","Kekeringan","OKI"]
+  }
+]
+[
+  {
+    "id": "spi_class_oki",
+    "name": "Klasifikasi SPI — OKI",
+    "desc": "Klasifikasi kekeringan meteorologis berbasis SPI. Semakin merah semakin parah defisit curah hujan.",
+    "sensor": "CHIRPS Daily",
+    "tahun": "2015–2024",
+    "lokasi": "Ogan Komering Ilir, Sumatera Selatan",
+    "emoji": "☔",
+    "tileUrl": "https://earthengine.googleapis.com/v1/projects/wijaya-474816/maps/e04e7eef49ec00a7c76d724a392bf96c-a7ca5baa233442307a4b0c33bb3081a9/tiles/{z}/{x}/{y}",
+    "bounds": [[-4.5, 104.5], [-2.5, 106.5]],
+    "stats": {"min":0,"max":3,"mean":1,"std":1,"bands":1,"width":500,"height":500,"nodata":-1},
+    "legendType": "categorical",
+    "legendItems": [
+      {"color": "#008000", "label": "Normal (SPI > -1.0)"},
+      {"color": "#FFFF00", "label": "Ringan (-1.0 s/d -1.5)"},
+      {"color": "#FFA500", "label": "Sedang (-1.5 s/d -2.0)"},
+      {"color": "#FF0000", "label": "Berat (≤ -2.0)"}
+    ],
+    "legendTitle": "Kelas SPI",
+    "tags": ["SPI","Klasifikasi","Kekeringan","OKI"]
+  }
+]
+[
+  {
+    "id": "drought_index_oki",
+    "name": "Indeks Kekeringan Komposit — OKI",
+    "desc": "Indeks kekeringan gabungan dari NDVI (40%), VCI (30%), dan SPI (30%). Semakin tinggi nilai semakin parah kekeringan.",
+    "sensor": "MODIS + CHIRPS",
+    "tahun": "2015–2024",
+    "lokasi": "Ogan Komering Ilir, Sumatera Selatan",
+    "emoji": "📊",
+    "tileUrl": "https://earthengine.googleapis.com/v1/projects/wijaya-474816/maps/090ac2d9225ffead450ca9cece4d28af-bdee04f757302df81966c638d10739d1/tiles/{z}/{x}/{y}",
+    "bounds": [[-4.5, 104.5], [-2.5, 106.5]],
+    "stats": {"min":0,"max":3,"mean":1.5,"std":0.8,"bands":1,"width":1000,"height":1000,"nodata":-1},
+    "legendType": "gradient",
+    "legendPalette": ["#008000","#FFFF00","#FFA500","#FF0000"],
+    "legendLabels": ["0 (Tidak)", "1.5 (Sedang)", "3 (Berat)"],
+    "legendTitle": "Drought Index",
+    "tags": ["Drought Index","Komposit","Kekeringan","OKI"]
+  }
+]
+[
+  {
+    "id": "drought_class_oki",
+    "name": "Klasifikasi Kekeringan Final — OKI",
+    "desc": "Klasifikasi kekeringan final 4 kelas berbasis indeks komposit NDVI+VCI+SPI. Hasil akhir analisis kekeringan OKI 2015–2024.",
+    "sensor": "MODIS + CHIRPS",
+    "tahun": "2015–2024",
+    "lokasi": "Ogan Komering Ilir, Sumatera Selatan",
+    "emoji": "🔥",
+    "tileUrl": "https://earthengine.googleapis.com/v1/projects/wijaya-474816/maps/5950d10f658f1832cfe14628b73eddde-968abef121b77e41afd562cedec6bbbb/tiles/{z}/{x}/{y}",
+    "bounds": [[-4.5, 104.5], [-2.5, 106.5]],
+    "stats": {"min":1,"max":4,"mean":2,"std":1,"bands":1,"width":1000,"height":1000,"nodata":-1},
+    "legendType": "categorical",
+    "legendItems": [
+      {"color": "#008000", "label": "Kelas 1 — Tidak Kering"},
+      {"color": "#FFFF00", "label": "Kelas 2 — Kekeringan Ringan"},
+      {"color": "#FFA500", "label": "Kelas 3 — Kekeringan Sedang"},
+      {"color": "#FF0000", "label": "Kelas 4 — Kekeringan Berat"}
+    ],
+    "legendTitle": "Kelas Kekeringan",
+    "tags": ["Kekeringan","Klasifikasi Final","OKI","Sumatera Selatan"]
+  }
+]
